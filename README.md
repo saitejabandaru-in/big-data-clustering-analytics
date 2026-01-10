@@ -1,3 +1,19 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0A192F&height=180&section=header&text=Big%20Data%20Clustering%20Analytics&fontSize=40&fontColor=00E5FF&animation=fadeIn" />
+</p>
+
+<p align="center">
+  🚕 Urban Mobility &nbsp;&nbsp;|&nbsp;&nbsp; 💳 Fraud Detection &nbsp;&nbsp;|&nbsp;&nbsp; 🧠 Scalable Clustering
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue"/>
+  <img src="https://img.shields.io/badge/ML-Unsupervised%20Learning-brightgreen"/>
+  <img src="https://img.shields.io/badge/Big%20Data-Clustering-orange"/>
+  <img src="https://img.shields.io/badge/License-MIT-success"/>
+  <img src="https://img.shields.io/badge/Status-Active-blue"/>
+</p>
+
 # 🚀 Scalable Big Data Clustering for Urban Mobility & Fraud Detection
 
 ## 🔍 What is this project?
