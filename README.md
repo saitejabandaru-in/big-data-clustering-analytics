@@ -1,62 +1,67 @@
 # 🚀 Scalable Big Data Clustering for Urban Mobility & Fraud Detection
 
 ## 🔍 What is this project?
-This project is a **real-world, large-scale clustering system** built to extract hidden patterns and anomalies from massive datasets.  
-It focuses on two high-impact domains:
+This repository contains a **real-world, scalable clustering system** designed to discover patterns and anomalies in large, complex datasets.
 
-- **Urban Mobility (NYC Taxi Trips)**
-- **Financial Security (Credit Card Fraud Detection)**
+The project focuses on two impactful domains:
 
-The goal is to show how **modern clustering algorithms scale, behave, and perform** when applied to millions of data points and high-dimensional feature spaces.
+- **Urban Mobility Analysis (NYC Taxi Trips)**
+- **Credit Card Fraud Detection**
 
-This repository is not a toy demo — it is a **research-grade and industry-relevant clustering framework**.
+The goal is to show how **modern clustering algorithms** such as **KMeans++, DBSCAN, OPTICS, BIRCH, and DENCLUE** perform when applied to **big data and high-dimensional data** — the kind of problems faced in industry.
+
+This is not a toy example — it is a **research-grade and production-inspired clustering framework**.
 
 ---
 
 ## 🧠 Why this matters
-In the real world, data is:
-- Huge  
-- Noisy  
-- High-dimensional  
-- Often unlabeled  
+Real-world data is:
+- Large
+- Noisy
+- High-dimensional
+- Mostly unlabeled  
 
-Traditional clustering methods struggle at this scale.
+Traditional clustering methods break at this scale.  
+This project demonstrates how **scalable and density-based algorithms** can uncover:
 
-This project demonstrates how **scalable clustering algorithms** like **Mini-Batch KMeans, DBSCAN, OPTICS, BIRCH, and DENCLUE** can be used to:
-- Discover mobility patterns in a smart city
-- Detect fraud in highly imbalanced financial data
-- Handle millions of records efficiently
+- Mobility patterns in a smart city
+- Anomalous transactions in financial data
+- Meaningful clusters without labels
 
 ---
 
 ## 📊 Datasets Used
 
+This project uses two publicly available Kaggle datasets:
+
 ### 🚕 NYC Taxi Trip Duration Dataset
-Used to understand:
+Used to analyze:
 - High-demand routes
-- Travel time clusters
-- Distance vs duration patterns
-- Urban mobility behavior
+- Travel-time clusters
+- Trip distance vs duration
+- Urban movement behavior
 
 Features:
-- Pickup & drop-off coordinates
-- Trip distance (computed using Euclidean distance)
-- Trip duration
-- Passenger count
+- Pickup & drop-off coordinates  
+- Trip distance (computed using Euclidean distance)  
+- Trip duration  
+- Passenger count  
 
 ---
 
 ### 💳 Credit Card Fraud Detection Dataset
-A real-world fraud dataset with:
+A real-world financial dataset with:
 - **284,807 transactions**
 - **492 fraud cases (0.17%)**
 - **28 PCA-transformed features**
 
-Fraud is treated as an **anomaly detection problem** using density-based clustering.
+Fraud is treated as an **anomaly detection problem**, where unusual transactions form sparse clusters.
 
 ---
 
 ## ⚙️ Algorithms Implemented
+
+Each algorithm is implemented as a **separate Python file** for clarity and modularity.
 
 | Category | Algorithms |
 |--------|----------|
@@ -65,20 +70,20 @@ Fraud is treated as an **anomaly detection problem** using density-based cluster
 | Density-based | DBSCAN, OPTICS, DENCLUE |
 | Grid-based | STING |
 
-Each algorithm is implemented and evaluated using the same pipeline for fair comparison.
+This structure allows easy testing, comparison, and reuse.
 
 ---
 
-## 🧩 Pipeline
+## 🧩 Project Workflow
 
 ```
-Raw Data
+Raw Data (Kaggle)
    ↓
-Data Cleaning & Feature Engineering
+Cleaning & Feature Engineering
    ↓
 Scaling & PCA (for fraud data)
    ↓
-Clustering Algorithms
+Individual Clustering Algorithms
    ↓
 Validation Metrics
    ↓
@@ -88,28 +93,43 @@ Visualization & Insights
 ---
 
 ## 📈 Evaluation Metrics
-To objectively compare clustering quality, we use:
+Clustering quality is measured using:
 
 - **Silhouette Score**
 - **Davies–Bouldin Index**
 - **Adjusted Rand Index (ARI)**
 - **Entropy**
 
-These measure:
-- Cluster compactness
-- Separation
-- Stability
-- Anomaly isolation
+These evaluate how well clusters are separated, compact, and meaningful.
 
 ---
 
-## 🏆 Key Results
-- **Mini-Batch KMeans++** scales efficiently on millions of NYC taxi trips  
-- **BIRCH** handles big data with very low memory usage  
-- **OPTICS & DENCLUE** outperform KMeans for fraud detection  
-- Density-based models isolate fraud as **sparse anomalous clusters**
+## 🏆 Key Findings
+- **Mini-Batch KMeans++** scales efficiently for millions of taxi trips  
+- **BIRCH** clusters big data with low memory usage  
+- **OPTICS and DENCLUE** are highly effective for fraud detection  
+- Density-based methods isolate fraudulent transactions as **anomalies**
 
-This shows why **one algorithm is never enough** — real big data needs **hybrid clustering strategies**.
+This confirms why **hybrid clustering strategies** are needed in real-world analytics.
+
+---
+
+## 📥 Downloading the Data
+
+Due to Kaggle licensing and file size limits, datasets are **not stored in this repository**.
+
+Please download them from:
+
+- NYC Taxi Trip Duration  
+  https://www.kaggle.com/c/nyc-taxi-trip-duration  
+
+- Credit Card Fraud Detection  
+  https://www.kaggle.com/mlg-ulb/creditcardfraud  
+
+After downloading, place the CSV files into:
+```
+data/raw/
+```
 
 ---
 
@@ -120,19 +140,23 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run clustering:
+Run any clustering algorithm:
 ```bash
-python src/kmeans.py
-python src/dbscan.py
-python src/optics.py
-python src/denclue.py
-python src/birch.py
+python kmeans.py
+python dbscan.py
+python optics.py
+python denclue.py
+python birch.py
+python clara.py
+python clarans.py
 ```
+
+Each file runs the full pipeline for that specific algorithm.
 
 ---
 
 ## 🧠 What this project demonstrates
-This project proves practical skills in:
+This project shows hands-on skills in:
 
 - Big data preprocessing
 - Scalable machine learning
@@ -142,11 +166,12 @@ This project proves practical skills in:
 - Model evaluation
 - High-dimensional data handling
 
-It reflects how clustering is used in:
-- Smart cities  
-- Banking & fintech  
-- Risk analytics  
-- Behavioral modeling  
+These are core skills used in:
+- FinTech
+- Smart cities
+- Risk analytics
+- Data engineering
+- AI research
 
 ---
 
@@ -158,10 +183,10 @@ Università degli Studi della Campania Luigi Vanvitelli
 ---
 
 ## ⭐ If you like this project
-Feel free to **star the repo**, fork it, or use it as a reference for:
+Feel free to star ⭐ the repository or use it as a reference for:
 - Research
-- ML engineering
 - Data science portfolios
+- Machine learning engineering
 - Big data analytics
 
 This repository represents **real-world clustering at scale**.
