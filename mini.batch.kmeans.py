@@ -1,5 +1,4 @@
 Mini-Batch Kmeans
-
 # Import necessary libraries
 import pandas as pd
 import numpy as np
@@ -41,12 +40,14 @@ cluster_centers_original = scaler.inverse_transform(kmeans.cluster_centers_)
 print("Cluster Centers (original scale):", cluster_centers_original)
 
 # Step 7: Visualization - Scatter plot of clusters with data points
+
 # Prepare a DataFrame for the scaled features with clusters
 df_scaled = pd.DataFrame(X, columns=['trip_distance', 'trip_duration'])
 df_scaled['cluster'] = df['cluster']
 
 # Create a color palette for the clusters
 palette = sns.color_palette('Set1', n_colors=5)
+
 # Scatter plot for visualizing clusters based on scaled trip_distance and trip_duration
 plt.figure(figsize=(10, 6))
 sns.scatterplot(x='trip_distance', y='trip_duration', hue='cluster', data=df_scaled,
