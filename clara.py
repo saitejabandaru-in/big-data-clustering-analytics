@@ -1,5 +1,4 @@
 CLARA
-
 from pyclustering.cluster.clara import clara
 import pandas as pd
 import numpy as np
@@ -7,7 +6,8 @@ from pyclustering.utils import read_sample
 from pyclustering.cluster import cluster_visualizer
 
 # Load dataset
-data = pd.read_csv(r"C:\Users\User\OneDrive\Desktop\trainee files\NYC.csv")
+data = pd.read_csv(r"trainee files\NYC.csv")
+
 # Feature engineering: calculate trip distance using coordinates
 data['trip_distance'] = np.sqrt((data['pickup_longitude'] -
 data['dropoff_longitude'])**2 +
