@@ -12,7 +12,7 @@ import os
 os.environ["OMP_NUM_THREADS"] = "1"
 
 # Step 1: Load the dataset
-df = pd.read_csv(r"C:\Users\User\OneDrive\Desktop\trainee files\NYC.csv")
+df = pd.read_csv(r"trainee files\NYC.csv")
 
 # Step 2: Feature Engineering - Calculate Trip Distance
 # Compute the Euclidean distance based on pickup and dropoff coordinates
