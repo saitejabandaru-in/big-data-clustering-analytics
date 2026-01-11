@@ -1,5 +1,4 @@
 BIRCH
-
 # Import required libraries
 from sklearn.cluster import Birch
 from sklearn.preprocessing import StandardScaler
@@ -10,7 +9,7 @@ import numpy as np
 
 # Step 1: Load dataset
 # Ensure the correct file path is used
-data = pd.read_csv(r"C:\Users\User\OneDrive\Desktop\trainee files\NYC.csv")
+data = pd.read_csv(r"trainee files\NYC.csv")
 
 # Step 2: Feature engineering - Calculate trip distance using Euclidean formula
 data['trip_distance'] = np.sqrt(
