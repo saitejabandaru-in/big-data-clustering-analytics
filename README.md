@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0A192F&height=180&section=header&text=Big%20Data%20Clustering%20Analytics&fontSize=40&fontColor=00E5FF&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F7CAC,100:1C2B36&height=180&section=header&text=Big%20Data%20Clustering%20Analytics&fontSize=36&fontColor=E6EEF3&animation=fadeIn&fontAlignY=35&desc=Scalable%20Big%20Data%20Clustering%20for%20Urban%20Mobility%20and%20Fraud%20Detection&descAlignY=55" />
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/Status-Active-blue"/>
 </p>
 
-# 🚀 Scalable Big Data Clustering for Urban Mobility & Fraud Detection
+
 
 ## 🔍 What is this project?
 This repository contains a **real-world, scalable clustering system** designed to discover patterns and anomalies in large, complex datasets.
