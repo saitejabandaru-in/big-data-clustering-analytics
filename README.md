@@ -1,5 +1,7 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F7CAC,100:1C2B36&height=180&section=header&text=Big%20Data%20Clustering%20Analytics&fontSize=36&fontColor=E6EEF3&animation=fadeIn&fontAlignY=35&desc=Scalable%20Big%20Data%20Clustering%20for%20Urban%20Mobility%20and%20Fraud%20Detection&descAlignY=55" />
+
+  <img src="https://img.shields.io/github/actions/workflow/status/saitejabandaru-in/big-data-clustering-analytics/python-app.yml?branch=main&label=Build&style=flat-square"/>
 </p>
 
 <p align="center">
@@ -206,3 +208,13 @@ Feel free to star ⭐ the repository or use it as a reference for:
 - Big data analytics
 
 This repository represents **real-world clustering at scale**.
+
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/amazing-feature`).
+3. Run tests before committing.
+4. Push to the branch (`git push origin feature/amazing-feature`).
+5. Open a Pull Request.
